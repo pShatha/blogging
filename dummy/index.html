@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="560" height="600" src="https://www.youtube.com/embed/C1crQ2-SIHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="abc"></iframe>
+
+
+    <div class="youtube-link | w-full bg-white rounded-b-xl hidden">
+        <form id="save-change-form-youtube" name="save-change-form-youtube" action="../config_files/add_youtube_embed.php" method="post" class="px-6 py-6">
+           <div class="mb-7 mb-2">
+              <label for="default-input" class="block mb-5 text-sm font-medium text-gray-900 ">
+                 Copy the embed code and paste below to embed youtube video
+                 <a class="text-blue-800" href="https://res.cloudinary.com/dko7kc7g2/video/upload/v1685231476/YouTube_-_Google_Chrome_2023-05-28_03-48-14_t4kxkg.mp4" target="_blank">See how!</a>
+              </label>
+              <textarea name="youtube" id="youtube" placeholder="https://youtube.com" cols="30" rows="8" class="no-spinner bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-500 focus:border-primary block w-full p-2.5 outline-none"><iframe width="560" height="315" src="https://www.youtube.com/embed/C1crQ2-SIHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></textarea>
+              
+           </div>
+
+           <button type="submit"
+              class="bg-primary  text-gray-50 px-5 flex justify-center hover:shadow-md w-full items-center py-3 rounded-3xl gap-3 ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.5 -4.5 24 24" width="24"
+                 fill="currentColor">
+                 <path
+                    d="M8.9 6.9v-5a1 1 0 1 0-2 0v5h-5a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z">
+                 </path>
+              </svg>
+              <p class="text-lg">Save Change</p>
+           </button>
+        </form>
+     </div>
+
+     <script>
+        let s = document.getElementById("abc")
+        alert(s.width)
+        alert(s.height)
+        s.height = "200";
+        alert(s.height)
+     </script>
+</body>
+</html>

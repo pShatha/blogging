@@ -1424,17 +1424,17 @@
         <div class="login_popup_row">
             <img src="images/login-logo.png" alt="">
             <h4>Create a new account to Open List or <a href="#modal1" class="modal-trigger modal-close">Sign in</a></h4> 
-            <form class="input_group"> 
-                <div class="input-field">
-                    <input  type="text" class="validate" placeholder="Full Name"> 
-                    <input  type="email" class="validate" placeholder="Email"> 
-                    <input type="password" class="validate" placeholder="Password"> 
+            <form class="input_group" > 
+                <div class="input-field" required>
+                    <input  type="text" class="validate" name='fullname' placeholder="Full Name" required> 
+                    <input  type="email" class="validate" name='email' placeholder="Email" required> 
+                    <input type="password" class="validate" name='password'placeholder="Password" required> 
                 </div>
                 <p>
                     <input type="checkbox" id="test">
                     <label for="test">I accept the <a href="#">Terms and Services</a></label>
                 </p>
-                <button class="waves-effect">SIgn in</button>
+                <button class="waves-effect" >SIgn Up</button>
             </form> 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="ion-close-round"></i></a>
         </div>
@@ -1460,7 +1460,7 @@
                     <input type="checkbox" id="test2">
                     <label for="test2">Remember me <a href="#">Forget password?</a></label>
                 </p>
-                <button class="waves-effect">SIgn in</button>
+                <button class="waves-effect">SIgn Up</button>
             </form> 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="ion-close-round"></i></a>
         </div>
@@ -1480,6 +1480,8 @@
     <script src="vendors/check-button/jquery.jqflipswitch.js"></script>
     <!-- Theme JS -->
     <script src="js/theme.js"></script>
+    <!-- page script -->
+    <script src="js/script.js"></script>
 </body>
 
 <!-- Mirrored from openlisthtml.themever.net/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 May 2023 16:56:57 GMT -->
